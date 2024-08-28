@@ -1,0 +1,87 @@
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-color: #81bcfc;
+}
+
+.activities-header {
+  background-color: #f6f7f8ee;
+  color: #666;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+.activities-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.activity-container {
+  background-color: rgba(174, 171, 177, 0.457);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.question-box {
+  margin-bottom: 20px;
+  color: rgb(95, 135, 15);
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.emoji-button {
+  background-color: #fff;
+  border: none;
+  border-radius: 30%;
+  font-size: 50px;
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.emoji-button:hover {
+  transform: scale(1.2);
+}
+
+.emoji-button.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.next-button {
+  background-color: #007bff;
+  color: #fff;
+  border-style:groove;
+  border-color: black !important;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-top: 10%;
+}
+
+.next-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

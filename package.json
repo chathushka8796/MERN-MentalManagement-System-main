@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@react-pdf/renderer": "^3.4.4",
+    "jspdf": "^2.5.1"
+  }
+}

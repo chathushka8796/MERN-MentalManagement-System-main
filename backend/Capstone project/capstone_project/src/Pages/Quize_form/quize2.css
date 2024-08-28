@@ -1,0 +1,121 @@
+.main-rect{
+    width:70%;
+    height: 50vw;
+    margin-left:15% ;
+    margin-top: 50px;
+    text-align: center
+}
+.step{
+    padding-top: 30px;
+    font-weight: 100;
+    font-family: Verdana;
+    color: white;
+}
+.q-1{
+    font-weight: 100;
+    padding-top: 50px;
+    font-family: Verdana;
+}
+.rect {
+    display: flex;
+    align-items: center;
+    width: 50%; /* Adjusted for better responsiveness */
+    height: 60px;
+    margin: 20px auto; /* Centered and adjusted margins */
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid #87ceeb;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s; /* Added transition for smooth hover effect */
+}
+.answer{
+    margin-right: 10%;
+}
+.rect:hover {
+    background: linear-gradient(to right, rgb(4, 157, 178), rgb(3, 107, 121), rgb(2, 44, 116), rgb(2, 27, 70));
+    color: white;
+}
+.answer:hover {
+    background: linear-gradient(to right, rgb(4, 157, 178), rgb(3, 107, 121), rgb(2, 44, 116), rgb(2, 27, 70));
+    color: white;
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Adjusted for better alignment */
+    margin-left: 20px; /* Added left margin for better spacing */
+}
+
+.answer {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: Verdana;
+}
+
+.btn{
+    width: 40%;
+    height: 60px;
+    margin-top: 70px;
+    margin-left: 0%;
+    background-color: #87ceeb;
+    border-radius: 50px;
+    border: 2px solid #87ceeb;
+    text-align: center;
+    margin-bottom: -20px;
+    color: white;
+    font-family: Verdana;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover {
+background-color:#055c7f;    
+color: white;
+}
+
+.quiz-title{
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .rect {
+        width: 90%;
+        height: 50px;
+    }
+
+    .img2 {
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+        margin-left: 15px;
+    }
+
+    .answer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rect {
+        width: 100%;
+        height: 50px;
+    }
+
+    .img2 {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+
+    .selected {
+        background-color: lightblue; /* Change background color to indicate selected answer */
+        color: white; /* Change text color for better contrast */
+    }
+      
+}
